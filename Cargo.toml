@@ -1,0 +1,13 @@
+[package]
+name = "portscanner-gui-win32"
+version = "1.0.0"
+authors = ["sudozeus <sudozeus@protonmail.ch>"]
+edition = "2021"
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1
+
+[dependencies]
+winsafe = { version = "0.0.23", features = ["gui"] }
